@@ -52,7 +52,7 @@ for car_name in range(1, (len(cars_lst)+1)):
     print(desired_length)
     model_list.append(clear_data_lst[1:])
 
-    for var_names in range(desired_length + 1):
+    for var_names in range(desired_length):
         # select model
         select_model = Select(web.find_element_by_xpath('//*[@id="DrpModel1"]'))
         select_model.select_by_index(var_names + 1)
