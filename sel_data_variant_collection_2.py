@@ -29,7 +29,7 @@ model_list = []                                               # empty lists for 
 var_list = []
 
 # connect to webadress using selenium and start retriving data
-for car_name in range(1, (len(cars_lst)+1)):
+for car_name in range(1, len(cars_lst)):
     find_var = Select(web.find_element_by_xpath('//*[@id="DrpMake1"]'))
     find_var.select_by_index(car_name)
 
